@@ -25,6 +25,7 @@ const userSchema = new Schema(
     subscription: {
       type: String,
       default: 'starter',
+      enum: [Subscription.STARTER, Subscription.PRO, Subscription.BUSINESS],
       // enum: {
       //   values: [Subscription.STARTER, Subscription.PRO, Subscription.BUSINESS],
       //   default: 'starter',
